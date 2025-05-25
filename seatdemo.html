@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .numbers {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            cursor: pointer;
+            user-select: none;
+        }
+        .selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select a Number</h2>
+    <div class="numbers">
+        <div class="number" onclick="selectNumber(this)">1</div>
+        <div class="number" onclick="selectNumber(this)">2</div>
+        <div class="number" onclick="selectNumber(this)">3</div>
+        <div class="number" onclick="selectNumber(this)">4</div>
+        <div class="number" onclick="selectNumber(this)">5</div>
+        <div class="number" onclick="selectNumber(this)">6</div>
+        <div class="number" onclick="selectNumber(this)">7</div>
+        <div class="number" onclick="selectNumber(this)">8</div>
+        <div class="number" onclick="selectNumber(this)">9</div>
+        <div class="number" onclick="selectNumber(this)">10</div>
+    </div>
+    <button onclick="submitSelection()">Submit</button>
+
+    <script>
+        let selectedNumber = null;
+
+        function selectNumber(element) {
+            // Remove previous selection
+            if (selectedNumber) {
+                selectedNumber.classList.remove("selected");
+            }
+            
+            // Set new selection
+            selectedNumber = element;
+            selectedNumber.classList.add("selected");
+        }
+
+        function submitSelection() {
+            if (selectedNumber) {
+                alert("Success! You selected number: " + selectedNumber.innerText);
+            } else {
+                alert("You must select at least one number!");
+            }
+        }
+    </script>
+</body>
+</html>

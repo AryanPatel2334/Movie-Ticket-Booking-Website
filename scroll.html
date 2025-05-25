@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Scrolling Slider</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; }
+        .slider-container { 
+            position: relative; 
+            width: 600px; 
+            overflow: hidden; 
+        }
+        .slider-wrapper { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            position: relative; 
+        }
+        .slider { 
+            display: flex; 
+            transition: transform 0.5s ease-in-out; 
+        }
+        .slide { 
+            min-width: 60%; /* Center image will take most of the width */
+            margin: 0 5%; /* Small margin to allow adjacent images to show */
+            text-align: center; 
+            position: relative; 
+            transform: scale(0.8); 
+            opacity: 0.6; 
+            transition: 0.5s ease;
+        }
+        .slide.active { 
+            transform: scale(1); 
+            opacity: 1; 
+        }
+        .slide img { 
+            width: 100%; 
+            border-radius: 10px; 
+        }
+        .buttons { 
+            position: absolute; 
+            top: 50%; 
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between; 
+            transform: translateY(-50%); 
+        }
+        .buttons button { 
+            background: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            border: none; 
+            padding: 10px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider" id="slider">
+                <div class="slide"><img src="Images/slide1.avif" alt="Image 1"></div>
+                <div class="slide"><img src="Images/slide1.avif" alt="Image 1"></div>
+                <div class="slide"><img src="Images/slide2.avif" alt="Image 2"></div>
+                <div class="slide"><img src="Images/slide1.avif" alt="Image 3"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
+    <script>
+        const slider = document.getElementById("slider");
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function updateSlides() {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) {
+                    slide.classList.add("active");
+                }
+            });
+            slider.style.transform = `translateX(${-index * 70}%)`; /* Adjusting the width for the center slide */
+        }
+
+        function nextSlide() { index = (index + 1) % slides.length; updateSlides(); }
+        function prevSlide() { index = (index - 1 + slides.length) % slides.length; updateSlides(); }
+
+        document.getElementById("next").addEventListener("click", nextSlide);
+        document.getElementById("prev").addEventListener("click", prevSlide);
+
+        setInterval(nextSlide, 3000);
+        updateSlides();
+    </script>
+</body>
+</html>
