@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .number {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .number:hover {
+            background-color: #f0f0f0;
+        }
+
+        .selected {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="numbers">
+        <div class="number" data-index="1">1</div>
+        <div class="number" data-index="2">2</div>
+        <div class="number" data-index="3">3</div>
+        <div class="number" data-index="4">4</div>
+        <div class="number" data-index="5">5</div>
+        <div class="number" data-index="6">6</div>
+        <div class="number" data-index="7">7</div>
+        <div class="number" data-index="8">8</div>
+        <div class="number" data-index="9">9</div>
+        <div class="number" data-index="10">10</div>
+    </div>
+    <script>
+        const numbers = document.querySelectorAll('.number');
+
+        let selectedNumber = null;
+
+        numbers.forEach((number) => {
+            number.addEventListener('click', () => {
+                if (selectedNumber) {
+                    selectedNumber.classList.remove('selected');
+                }
+                number.classList.add('selected');
+                selectedNumber = number;
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
