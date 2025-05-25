@@ -1,0 +1,171 @@
+.main {
+    background-color: rgb(233, 233, 233);
+    width: 99vw;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+
+
+.ticket {
+    display: flex;
+    background-color: white;
+    width: 849px;
+    height: 324px;
+    margin: 0px 0px 40px 134px;
+    border-radius: 5px;
+    position: relative;
+    top: 42px;
+}
+
+.username {
+    color: #0300ff;
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+    padding-left: 148px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.no-tickets {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    padding: 50px;
+}
+
+.ticket img {
+    width: 150px;
+    height: 237px;
+    margin: 20px 0px 0px 20px;
+    border-radius: 12px;
+}
+
+.cutout1 {
+    background-color: rgb(233, 233, 233);
+    height: 24px;
+    width: 24px;
+    position: relative;
+    left: 12px;
+    bottom: 10px;
+    border-radius: 22px;
+}
+
+
+.cutout2 {
+    background-color: rgb(233, 233, 233);
+    height: 24px;
+    width: 24px;
+    position: relative;
+    right: 12px;
+    top: 310px;
+    border-radius: 22px;
+}
+
+
+.linee {
+    width: 2px;
+    height: 292px;
+    position: relative;
+    top: 13px;
+    right: 27px;
+    border-style: dashed;
+    border-color: #e1dede;
+}
+
+.mname p {
+    padding: 20px 0px 0px 0px;
+    position: relative;
+    right: 10px;
+}
+
+.date p {
+    position: relative;
+    right: 9px;
+    top: 17px;
+    font-size: 14px;
+}
+
+.tname p {
+    position: relative;
+    top: 25px;
+    color: gray;
+    right: 10px;
+    font-size: 14px;
+}
+
+.seats p {
+    position: relative;
+    top: 37px;
+    right: 10px;
+}
+
+.total {
+    display: flex;
+}
+
+.seats img {
+    height: 34px;
+    width: 34px;
+    top: 24px;
+    right: 35px;
+    position: relative;
+}
+
+.total p {
+    position: relative;
+    top: 52px;
+    right: 29px;
+    color: gray;
+    font-weight: bold;
+}
+
+.screen p {
+    position: relative;
+    top: 35px;
+    right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: gray;
+}
+
+.price {
+    display: flex;
+    position: relative;
+    top: 39px;
+    right: 10px;
+    gap: 470px;
+}
+
+.fees p {
+    position: relative;
+    top: 40px;
+    right: 10px;
+    color: gray;
+    font-size: 13px;
+}
+
+.linee2 {
+    width: 619px;
+    height: 30px;
+    position: relative;
+    top: 40px;
+    right: 18px;
+    border-style: dashed;
+    border-color: #e1dede;
+}
+
+.paid {
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    gap: 436px;
+}
+
+.fprice {
+    font-size: 20px;
+    font-weight: bold;
+}

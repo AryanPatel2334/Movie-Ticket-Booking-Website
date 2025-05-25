@@ -1,0 +1,397 @@
+.time {
+    padding: 12px 0px 12px 50px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    background-color: #f7f7ff;
+}
+
+.time p {
+    border: 1px solid #2dc492;
+    color: #2dc492;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.line2 {
+    background-color: rgb(218, 218, 218);
+    width: 48vw;
+    height: 1px;
+}
+
+.middle {
+    margin: 55px 400px;
+    /* height: 50vh; */
+}
+
+.middle>p {
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+    padding-bottom: 10px;
+}
+
+.seatlayout {
+    padding: 20px 0px 0px 0px;
+    font-size: 12px;
+    position: relative;
+    z-index: 0;
+}
+
+.seatlayout .a {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 4px;
+}
+
+.divison {
+    font-size: 14px;
+    color: rgb(162, 162, 162);
+}
+
+.seatlayout .seats {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 32px;
+    bottom: 18px;
+}
+
+.seatlayout .seats .seat {
+    border: 1px solid #2dc492;
+    color: #2dc492;
+    height: 22px;
+    width: 24px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.seatlayout .seats .seat:hover {
+    background-color: #2dc492;
+    color: white;
+}
+
+
+.seatlayout .seats .selected1 {
+    background-color: #2dc492;
+    color: white;
+}
+
+.seatlayout .b {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 4px;
+}
+
+.b .seats {
+    display: flex;
+    gap: 82px;
+}
+
+.b .seats .slot1 {
+    display: flex;
+    gap: 10px;
+}
+
+
+.b .seats .slot2 {
+    display: flex;
+    gap: 10px;
+}
+
+.b .no4 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+.b .no4:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.b .no5 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no5:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.b .no6 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no6:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.b .no7 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no7:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.a .no10 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no10:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.a .no3 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no3:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.a .no13 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no13:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+
+.a .no14 {
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.b .no14:hover {
+    background-color: rgb(255 196 0);
+    color: white;
+}
+
+.bottom {
+    height: 3vh;
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+}
+
+.bottom .bestseller {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .bestseller .seat {
+    border: 1px solid #2dc492;
+    color: #2dc492;
+    height: 18px;
+    width: 19px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 4px 3px rgb(255 196 0);
+}
+
+
+.bottom .available {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottom .available .seat {
+    border: 1px solid #2dc492;
+    color: #2dc492;
+    height: 18px;
+    width: 19px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bottom .select {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bottom .selected .seat {
+    border: 1px solid #2dc492;
+    color: #2dc492;
+    background-color: #12ae7a;
+    height: 18px;
+    width: 19px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .sold {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .sold .seat {
+    background-color: rgb(200, 200, 200);
+    height: 18px;
+    width: 19px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection {
+    position: absolute;
+    z-index: 1;
+    bottom: 200px;
+    left: 500px;
+    height: 445px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.2s;
+
+}
+
+.selection>p {
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+}
+
+.selection img {
+    height: 100px;
+    padding: 10px 10px 50px 190px;
+}
+
+
+.selection .seatno {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection .seatno p {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+}
+
+.selection .seatno div {
+    position: relative;
+    height: 30px;
+    transition: all 0.3s;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.selection .line {
+    background-color: rgb(229, 229, 229);
+    height: 1px;
+    margin: 20px 0px 10px 0px;
+    color: rgb(86, 86, 86);
+}
+
+.selection .seattype {
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.seattype .tname {
+    color: rgb(89, 89, 89);
+    padding: 2px;
+}
+
+.selected2 {
+    background-color: var(--color1);
+    color: white;
+    border-radius: 20px;
+}
+
+.seattype .rupees {
+    font-weight: 550;
+    padding: 2px;
+}
+
+
+.seattype .avail {
+    color: rgb(16, 205, 57);
+    padding: 2px;
+}
+
+.selection button {
+    padding: 12px 150px;
+    position: absolute;
+    z-index: 10;
+    left: 57px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selection .seatno div:hover {
+    background-color: var(--color1);
+    color: white;
+}
+
+.screen {
+    padding: 80px 0px 0px 260px;
+}
+
+.screen img {
+    transform: rotate(181deg);
+    height: 150px;
+    position: relative;
+    right: 55px;
+}

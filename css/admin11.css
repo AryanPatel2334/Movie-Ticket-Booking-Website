@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+li img {
+    height: 28px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* Navigation  */
+
+.navigation {
+    position: fixed;
+    width: 22vw;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: all 0.7s;
+    overflow: hidden;
+}
+
+.navigation.active {
+    width: 10vw;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo img {
+    height: 89px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.close img{
+    height: 20px;
+    filter: invert(1);
+    position: relative;
+    left: 219px;
+    top: -18px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.close img:hover{
+    transform: rotate(180deg);
+}
+
+
+.title{
+    position: relative;
+    left: 58px;
+    top: 8px;
+}
+ 
+.navigation ul {
+    position: absolute;
+}
+
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+}
+
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 92px;
+    text-align: center;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+    left: 5px;
+} 
+
+
+.invert {
+    filter: invert();
+}
+
+/* =======================main================= */
+
+.main {
+    position: relative;
+    width: 78vw;
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+
+.topbar {
+    display: flex;
+    position: relative;
+    height: 85px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+.topbar button{
+    position: absolute;
+    top: 24px;
+    right: 9px;
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 13px;
+    transition: all 0.3s;
+}
+
+.topbar button:hover{
+    transform: scale(1.06);
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+.topbar .user1{
+    position: absolute;
+    right: 100px;
+}
+
+.toggle img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.toogle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0px 10px;
+    left: 241px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid var(--black2);
+}
+
+.search label img {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    font-size: 1.2rem;
+    height: 17px;
+}
+
+.user {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    right: 222px;
+}
+
+.user img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.dashboard > h1{
+    position: absolute;
+    top: 84px;
+    left: 35px;
+    color: blue;
+}
+
+
+/* Language buttons */
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 40px;
+}
+
+.buttons button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.buttons button:hover {
+    transform: scale(1.08);
+}
+
+.Hindi {
+    background: linear-gradient(to right, green, gray, blue);
+}
+
+.Gujarati {
+    background: linear-gradient(to right, orange, pink, blue);
+}
+
+.Hindi {
+    background: linear-gradient(to right, red, gray, blue);
+}
+
+
+.English {
+    background: linear-gradient(to right, blue, gray, green);
+}
+
+
+.Tamil {
+    background: linear-gradient(to right,gold,red,blue);
+}
+
+
+.Telugu {
+    background: linear-gradient(to right, blue, gray, green);
+}
+
+form{
+    position: relative;
+    left: 200px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label{
+    font-weight: 500;
+}
+
+.image input{
+    position: relative;
+    left: 30px;
+}
+
+
+.name input{
+    position: relative;
+    left: 38px;
+}
+
+.certification input{
+    position: relative;
+    left: 10px;
+}
+
+.language input{
+    position: absolute;
+    left: 60px;
+}
+
+form .insert{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+form .update{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons1{
+    display: flex;
+    gap: 20px;
+}
+
+form .delete{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.inserted{
+    position: static;
+    background-color: black;
+    color: white;
+    bottom: 1500px;
+    left: 500px;
+    width: 180px;
+    height: 30px;
+}
+
+.shows > h1{
+    margin-left: 20px;
+}
+
+table{
+    border: 2px solid blue;
+    margin: 20px;
+}
+
+table th{
+    padding: 10px;
+}
+
+table td{
+    padding: 10px;
+}
+/* 
+.tbtheatre{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.atheatres{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.mheading{
+    margin-left: 140px;
+    margin-top: 30px;
+} */
+
+.cardbox img{
+    height: 40px;
+    filter: invert(0.2);
+}
+
+.cardbox{
+    position: relative;
+    width: 100%;
+    padding: 80px 0px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.cardbox .card{
+    width: 250px;
+    position: relative;
+    background-color: rgb(247 241 241);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s;
+}
+
+.cardbox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(7, 7, 207);
+}
+
+.cardbox .card .cardname{
+    color: rgb(116, 116, 116);
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.cardbox .card:hover{
+    transform: scale(1.06);
+    background-color: rgb(59, 59, 255);
+}
+
+.cardbox .card:hover .numbers,
+.cardbox .card:hover .cardname
+{
+    color: white;
+}
+
+.cardbox .card:hover img{
+    filter: invert(1);
+}
+
+

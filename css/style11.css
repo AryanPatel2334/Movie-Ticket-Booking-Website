@@ -1,0 +1,550 @@
+/* css for slider */
+
+.slider {
+    display: flex;
+    /* justify-content: center; */
+    overflow-x: auto;
+}
+
+
+/* css for movie part */
+
+.main {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+/* css for leftpart of the main */
+
+.main .leftpart {
+    width: 23vw;
+}
+
+.main .leftpart .heading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box {
+    position: relative;
+    cursor: pointer;
+}
+
+.box p {
+    cursor: pointer;
+}
+
+.leftpart .box {
+    margin: 10px;
+    background-color: white;
+
+}
+
+/* css for languages */
+
+.languages {
+    height: 195px;
+    width: 320px;
+    transition: all 0.3s;
+}
+
+.languages .multibox {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    gap: 10px;
+    left: 20px;
+    flex-wrap: wrap;
+
+}
+
+.multibox .All {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.multibox .Hindi {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.multibox .English {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Gujarati {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Tamil {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Telugu {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Malyalam {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Kannada {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.multibox .Marathi {
+    border: var(--border1);
+    color: var(--color1);
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* css for genres */
+
+.genres {
+    height: 45px;
+    width: 320px;
+    transition: all 0.3s;
+}
+
+
+.genres .multibox {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    gap: 10px;
+    left: 20px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.multibox .Drama {
+    height: 30px;
+    width: 60px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Action {
+    height: 30px;
+    width: 60px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Thriller {
+    height: 30px;
+    width: 60px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Adventure {
+    height: 30px;
+    width: 100px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Animation {
+    height: 30px;
+    width: 100px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Comedy {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .Family {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Crime {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Fantasy {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Historical {
+    height: 30px;
+    width: 90px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Musical {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Period {
+    height: 30px;
+    width: 70px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Romantic {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.multibox .Sci-Fi {
+    height: 30px;
+    width: 70px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+/* css for format  */
+
+.format {
+    height: 45px;
+    width: 320px;
+    transition: all 0.3s;
+}
+
+.box p {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.box img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.format .multibox {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    gap: 10px;
+    left: 20px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.multibox .D2 {
+    height: 30px;
+    width: 45px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .D3 {
+    height: 30px;
+    width: 45px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .DX4 {
+    height: 30px;
+    width: 50px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .IMAX3 {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .DX43 {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.multibox .IMAX2 {
+    height: 30px;
+    width: 80px;
+    border: var(--border1);
+    text-align: center;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+/* css for rightpart of the main */
+
+/* Movies Section */
+
+.main .rightpart {
+    width: 75vw;
+}
+
+.main .rightpart .heading {
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 18px;
+}
+
+.lanchoice {
+    display: flex;
+    gap: 10px;
+}
+
+.lanchoice .box {
+    border: var(--border1);
+    color: var(--color1);
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.comming {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    justify-content: space-between;
+    padding: 25px;
+    margin: 25px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comming p:first-child {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.comming p:nth-child(2) {
+    color: var(--color1);
+    font-size: 18px;
+    position: relative;
+    right: 30px;
+}
+
+.comming img {
+    position: relative;
+    transform: rotate(270deg);
+    top: 3px;
+    left: 5px;
+}
+
+.movies {
+    margin: 60px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.movies .movie img {
+    height: 320px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.movies .movie img:hover {
+    transform: scale(1.05);
+}
+
+.movies .movie {
+    cursor: pointer;
+}
+
+.movies .movie .title {
+    width: 200px;
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.movies .movie .mtype {
+    position: relative;
+    left: 5px;
+    color: rgb(102, 102, 102);
+}
+
+
+.movies .movie .language {
+    width: 180px;
+    position: relative;
+    color: black;
+    left: 10px;
+    color: rgb(102, 102, 102);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1300px) {
+
+
+    .main {
+        display: flex;
+        padding: 30px;
+        gap: 30px;
+        background-color: rgb(247, 247, 247);
+    }
+
+    .main .leftpart {
+        display: none;
+    }
+
+
+    .main .rightpart {
+        width: 99vw;
+    }
+
+}
+
+@media only screen and (max-width: 412px) {
+
+    .slider {
+        position: relative;
+        top: 25px;
+        display: flex;
+        width: 635px;
+        overflow-x: auto;
+    }
+
+    .slider img {
+        height: 200px;
+    }
+
+
+    .main .rightpart {
+        width: 144vw;
+    }
+
+    .movies {
+        margin: 60px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .movies .movie img {
+        height: 370px;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+}

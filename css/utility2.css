@@ -1,0 +1,54 @@
+:root {
+    --border1: 2px solid rgb(234, 233, 233);
+    --color1:#f84464;
+    --hovercolor: rgb(251, 82, 82);
+    /* --hovercolor: rgb(120, 109, 201); */
+    /* --color1: rgb(48, 48, 168); */
+}
+
+
+* {
+    /* background-color: #f5f5fa; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.top {
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .info .title {
+    font-size: 14px;
+    padding: 18px 0px 8px 35px;
+}
+
+.top .info .theatre p {
+    font-size: 12px;
+    padding-left: 35px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+}
+
+.top .ticket{
+    cursor: pointer;
+}
+
+.top .ticket p {
+    margin: 20px 120px 20px 40px;
+    border: 1px solid gray;
+    padding: 6px 30px 6px 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: rgb(110, 110, 110);
+    font-weight: 550;
+}
+
+
+.line1 {
+    background-color: rgb(218, 218, 218);
+    width: 100vw;
+    height: 1px;
+}

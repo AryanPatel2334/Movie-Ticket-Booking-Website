@@ -1,0 +1,239 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.row {
+    width: 500px;
+    height: 690px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 20px; 
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    position: absolute;
+    top: 300px;
+    left: 290px;
+}
+
+.text p {
+    color: white;
+    font-size: 40px;
+}
+
+i {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+
+}
+
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.input-field span{
+    font-size: 13px;
+}
+
+
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 30px;
+    color: #40414a;
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 14px;
+}
+
+
+.gen {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 14px;
+}
+
+
+.age {
+    position: absolute;
+    bottom: 77px;
+    left: 10px;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 14px;
+}
+
+
+.mobile {
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+
+.email {
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 14px;
+}
+
+
+.password {
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 14px;
+}
+
+
+
+.txtage{
+    position:absolute;
+    top: 10px;
+}
+
+.input-box .category {
+    margin-bottom: 20px;
+
+}
+
+.gen {
+    margin-top: -10px;
+}
+
+.rgroup {
+    margin-top: 30px;
+    margin-bottom: 37px;
+}
+
+.input-field input:focus~label {
+    top: -20px;
+    font-size: 13px;
+}
+
+.input-field input:valid~label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.input-field .input:focus,
+.input-field .input:valid {
+    border-bottom: 1px solid #743ae1;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.submit:hover {
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+}
+
+.signin {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .side-image {
+        border-radius: 10px 10px 0 0;
+    }
+
+    img {
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+
+    .text {
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+
+    .text p,
+    i {
+        font-size: 16px;
+    }
+
+    .row {
+        max-width: 420px;
+        width: 100%;
+    }
+}

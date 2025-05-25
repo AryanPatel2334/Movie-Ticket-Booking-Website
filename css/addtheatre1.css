@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+li img {
+    height: 28px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* Navigation  */
+
+.navigation {
+    position: fixed;
+    left: 0px;
+    width: 22vw;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active {
+    width: 10vw;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo img {
+    height: 89px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.title{
+    position: relative;
+    left: 58px;
+    top: 8px;
+}
+ 
+.navigation ul {
+    position: absolute;
+    right: 128px;
+}
+
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+}
+
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+    left: 5px;
+} 
+
+
+
+.invert {
+    filter: invert();
+}
+
+/* =======================main================= */
+
+.main {
+    position: relative;
+    width: 78vw;
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+
+.topbar {
+    display: flex;
+    position: relative;
+    height: 85px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.toggle img {
+    height: 30px;
+}
+
+.toogle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0px 10px;
+    left: 330px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid var(--black2);
+}
+
+.search label img {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-size: 1.2rem;
+    height: 17px;
+}
+
+.user {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    right: 10px;
+}
+
+.user img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.dashboard > h1{
+    position: absolute;
+    top: 84px;
+    left: 35px;
+    color: blue;
+}
+
+
+.table-container {
+    max-width: 800px;
+    margin: 40px auto;
+} 
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    width: 200px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.alert-success{
+    position: relative;
+    left: 50px;
+    width: 400px;
+}
+
+
+.alert-danger{
+    position: relative;
+    left: 50px;
+    width: 400px;
+}
+
+form{
+    position: relative;
+    width: 700px;
+    top: 21px;
+    left: 183px;
+    border: 1px solid gray;
+}
+
+table {
+    position: relative;
+    top: 50px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+.main h3{
+    position: relative;
+    top: 25px;
+}
+
